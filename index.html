@@ -19,9 +19,19 @@
             padding: 30px; 
             border-radius: 8px; 
             box-shadow: 0 4px 12px rgba(0,0,0,0.05); 
+            text-align: center; /* Center aligns the image and name */
         }
         h1 { color: #111; margin-bottom: 0; }
         .headline { font-size: 1.2em; color: #555; margin-top: 5px; font-weight: 300; }
+        .profile-pic {
+            width: 150px; /* Adjust size as needed */
+            height: 150px; /* Adjust size as needed */
+            border-radius: 50%; /* Makes it a circle */
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+            margin: 20px auto 15px auto; /* Centers it horizontally, adds space */
+            border: 3px solid #007bff; /* Optional border */
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
         .links { margin: 25px 0; }
         .links a { 
             margin-right: 15px; 
@@ -35,17 +45,21 @@
             margin-top: 5px;
         }
         .links a:hover { background-color: #007bff; color: #fff; }
-        h2 { border-bottom: 2px solid #eee; padding-bottom: 5px; margin-top: 40px; }
+        h2 { border-bottom: 2px solid #eee; padding-bottom: 5px; margin-top: 40px; text-align: left; }
         
         .overview {
             background-color: #f8f8f8;
             border-left: 5px solid #007bff;
             padding: 1px 20px 10px 20px;
             margin-top: 25px;
+            text-align: left;
         }
         .overview p { font-style: italic; }
 
-        .project-list { padding-left: 20px; }
+        .skills-summary { background-color: #f0f8ff; padding: 15px; border-radius: 5px; margin-top: 25px; text-align: left;}
+        .skills-summary p { margin: 0; }
+
+        .project-list { padding-left: 20px; text-align: left; }
         .project-list li { margin-bottom: 25px; }
         .project-list a.title { font-weight: bold; font-size: 1.2em; color: #333; text-decoration: none; }
         .project-list a.title:hover { text-decoration: underline; }
@@ -63,13 +77,12 @@
             margin-right: 15px;
         }
         .project-list .project-links a:hover { text-decoration: underline; }
-
-        .skills-summary { background-color: #f0f8ff; padding: 15px; border-radius: 5px; }
-        .skills-summary p { margin: 0; }
     </style>
 </head>
 <body>
     <div class="container">
+        
+        <img src="profile.jpg" alt="Ruslan Dubas Headshot" class="profile-pic">
         
         <h1>Ruslan Dubas</h1>
         <p class="headline">
@@ -83,7 +96,7 @@
         </div>
 
         <div class="overview">
-            <p>This portfolio showcases projects demonstrating my core capabilities: building Power BI dashboards, automating financial workflows with C#, and performing machine learning analysis on large-scale government data to deliver scationable insights.</p>
+            <p>This portfolio showcases projects demonstrating my core capabilities: building Power BI dashboards, automating financial workflows with C#, and performing machine learning analysis on large-scale government data to deliver actionable insights.</p>
         </div>
 
         <div class="skills-summary">
