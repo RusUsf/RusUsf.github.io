@@ -36,11 +36,36 @@
         }
         .links a:hover { background-color: #007bff; color: #fff; }
         h2 { border-bottom: 2px solid #eee; padding-bottom: 5px; margin-top: 40px; }
-        .project-list li { margin-bottom: 15px; }
-        .project-list a { font-weight: bold; font-size: 1.1em; color: #333; }
-        .project-list p { margin: 5px 0 0 0; }
-        .skills { background-color: #f0f8ff; padding: 15px; border-radius: 5px; }
-        .skills p { margin: 0; }
+        
+        .overview {
+            background-color: #f8f8f8;
+            border-left: 5px solid #007bff;
+            padding: 1px 20px 10px 20px;
+            margin-top: 25px;
+        }
+        .overview p { font-style: italic; }
+
+        .project-list { padding-left: 20px; }
+        .project-list li { margin-bottom: 25px; }
+        .project-list a.title { font-weight: bold; font-size: 1.2em; color: #333; text-decoration: none; }
+        .project-list a.title:hover { text-decoration: underline; }
+        .project-list .description { margin-top: 5px; margin-bottom: 8px; }
+        .project-list .skills {
+            font-size: 0.9em;
+            color: #555;
+            font-weight: bold;
+        }
+        .project-list .project-links a {
+            font-size: 0.9em;
+            font-weight: bold;
+            text-decoration: none;
+            color: #007bff;
+            margin-right: 15px;
+        }
+        .project-list .project-links a:hover { text-decoration: underline; }
+
+        .skills-summary { background-color: #f0f8ff; padding: 15px; border-radius: 5px; }
+        .skills-summary p { margin: 0; }
     </style>
 </head>
 <body>
@@ -57,43 +82,56 @@
             <a href="mailto:ruslandubas2013@gmail.com">Email Me</a>
         </div>
 
-        <div class="skills">
+        <div class="overview">
+            <p>This portfolio showcases projects demonstrating my core capabilities: building Power BI dashboards, automating financial workflows with C#, and performing machine learning analysis on large-scale government data to deliver scationable insights.</p>
+        </div>
+
+        <div class="skills-summary">
             <p><strong>Technical Skills:</strong> SQL, C#, PowerShell, R | Postgres, SQL Server, T-SQL | AWS (EC2, RDS, S3) | Power BI</p>
         </div>
+
+        <h2>Portfolio Projects</h2>
+        <ul class="project-list">
+            <li>
+                <a href="[LINK_TO_DASHBOARD_OR_GITHUB_HERE]" target="_blank" class="title">OnMed Healthcare KPI Dashboard</a>
+                <p class="description">A Power BI dashboard consolidating operational and clinical data for management decision-making.</p>
+                <p class="skills">Skills: Power BI, SQL Optimization (Stored Procedures), Power Automate, HIPAA Compliance</p>
+            </li>
+            <li>
+                <a href="[LINK_TO_GITHUB_REPO_HERE]" target="_blank" class="title">Automated Financial Reconciliation Engine</a>
+                <p class="description">A C# .NET application that automates bank statement reconciliation, eliminating manual data entry by mimicking multi-stage matching logic.</p>
+                <p class="skills">Skills: Software Development (C# .NET), Process Automation, Complex Business Logic</p>
+            </li>
+            <li>
+                <a href="[LINK_TO_GITHUB_REPO_HERE]" target="_blank" class="title">Florida Real Estate Investment Analysis (Machine Learning)</a>
+                <p class="description">A machine learning model using 10 years of Florida government data (634 GB) to predict single-family home resale profitability.</p>
+                <p class="skills">Skills: Large-Scale Data Engineering, SQL, Machine Learning (R), Government Data (FDOR)</p>
+                <div class="project-links">
+                    <a href="https://github.com/RusUsf/FDOR_Data_and_Models" target="_blank">View on GitHub</a>
+                    <a href="https://youtu.be/q313-EOkkJs" target="_blank">Watch Video Demo</a>
+                </div>
+            </li>
+        </ul>
 
         <h2>Published PowerShell Modules</h2>
         <ul class="project-list">
             <li>
-                <a href="https://www.powershellgallery.com/packages/ApiTools" target="_blank">ApiTools</a>
-                <p>A collection of tools for streamlining API interactions and data handling in PowerShell.</p>
+                <a href="https://www.powershellgallery.com/packages/ApiTools" target="_blank" class="title">ApiTools</a>
+                <p class="description">A collection of tools for streamlining API interactions and data handling in PowerShell.</p>
             </li>
             <li>
-                <a href="https://www.powershellgallery.com/packages/CA.ApiGenerator/1.0.2" target="_blank">CA.ApiGenerator</a>
-                <p>Generates a .NET Clean Architecture (CQRS) solution from an existing database-first context.</p>
+                <a href="https://www.powershellgallery.com/packages/CA.ApiGenerator/1.0.2" target="_blank" class="title">CA.ApiGenerator</a>
+                <p class="description">Generates a .NET Clean Architecture (CQRS) solution from an existing database-first context.</p>
             </li>
         </ul>
 
         <h2>Articles & Writing</h2>
         <ul class="project-list">
             <li>
-                <a href="https://medium.com/@ruslandubas2013/database-first-clean-architecture-automate-your-net-ca-cqrs-setup-with-powershell-ba598aec30f7" target="_blank">Database-First Clean Architecture: Automate your .NET CA/CQRS Setup with PowerShell</a>
-                <p>A technical guide on automating the creation of Clean Architecture solutions using PowerShell.</p>
+                <a href="https://medium.com/@ruslandubas2013/database-first-clean-architecture-automate-your-net-ca-cqrs-setup-with-powershell-ba598aec30f7" target="_blank" class="title">Database-First Clean Architecture: Automate your .NET CA/CQRS Setup with PowerShell</a>
             </li>
             <li>
-                <a href="https://medium.com/@ruslandubas2013/location-location-location-predicting-real-estate-profitability-with-r-and-634gb-of-florida-tax-f7a6c72b5e8b" target="_blank">Predicting Real Estate Profitability with R and 63.4GB of Florida Tax Data</a>
-                <p>A data analytics project showcasing how to model real estate trends using R on a massive dataset.</p>
-            </li>
-        </ul>
-
-        <h2>Key GitHub Projects</h2>
-        <ul class="project-list">
-            <li>
-                <a href="[LINK_TO_YOUR_GITHUB_REPO_HERE]" target="_blank">QuickBooks to Sage Intacct ETL Pipeline</a>
-                <p>Created a comprehensive ETL pipeline using PowerShell and SQL Server to migrate legacy QuickBooks data to Sage Intacct.</p>
-            </li>
-            <li>
-                <a href="[LINK_TO_YOUR_GITHUB_REPO_HERE]" target="_blank">OnMed EMR System (Full-Stack)</a>
-                <p>Collaborated on a full-stack EMR web application (Angular, C#) and led data migration from SQL Server to Postgres.</p>
+                <a href="https://medium.com/@ruslandubas2013/location-location-location-predicting-real-estate-profitability-with-r-and-634gb-of-florida-tax-f7a6c72b5e8b" target="_blank" class="title">Predicting Real Estate Profitability with R and 63.4GB of Florida Tax Data</a>
             </li>
         </ul>
 
