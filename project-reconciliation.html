@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: Financial Reconciliation Engine</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; background-color: #f9f9f9; color: #333; max-width: 800px; margin: 20px auto; padding: 20px; }
+        .container { background-color: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        a.back-link { font-weight: bold; text-decoration: none; color: #007bff; }
+        h1 { margin-top: 15px; }
+        h2 { border-bottom: 2px solid #eee; padding-bottom: 5px; margin-top: 30px; }
+        h3 { margin-top: 25px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        .relevance li { list-style-type: '✓'; padding-left: 5px; } /* Checkmark list */
+        code { background-color: #eee; padding: 2px 5px; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">&larr; Back to Portfolio</a>
+        
+        <h1>Automated Financial Reconciliation Engine</h1>
+        <p><strong>What I Built:</strong> A C# application that automates bank statement reconciliation, eliminating manual data entry.</p>
+
+        <h2>Key Skills Demonstrated</h2>
+        <ul>
+            <li>Software development (C# .NET—transferable to Python)</li>
+            <li>Process automation & workflow optimization</li>
+            <li>Complex business logic implementation</li>
+            <li>Data processing (Excel consolidation & transformation)</li>
+        </ul>
+
+        <h2>The Problem & Solution</h2>
+        <p><strong>Problem:</strong> Finance teams spent hours manually matching bank statements line-by-line against accounting system exports—error-prone and inefficient.</p>
+        
+        <p><strong>Solution:</strong> Built an automated tool with smart matching logic that:</p>
+        <ol>
+            <li>Reads Bank Statement + Blackbaud exports (Excel).</li>
+            <li>Performs multi-stage matching that mimics an accountant's thinking:
+                <ul>
+                    <li>Removes reversals that net to zero.</li>
+                    <li>Links simple pairs (e.g., check numbers).</li>
+                    <li>Finds grouped transactions (one deposit = multiple entries).</li>
+                    <li>Validates using business rules.</li>
+                </ul>
+            </li>
+            <li>Outputs a Reconciliation Summary showing match status for every transaction.</li>
+        </ol>
+
+        <h2>Business Impact</h2>
+        <ul>
+            <li><strong>Before:</strong> Multi-hour manual process</li>
+            <li><strong>After:</strong> 5-minute exception review</li>
+            <li><strong>Value:</strong> Eliminated repetitive work, reduced errors, and freed the finance team for strategic analysis.</li>
+        </ul>
+        
+        <h2>Relevance</h2>
+        <ul class="relevance">
+            <li>Process automation & efficiency improvement</li>
+            <li>Development skills (C# → Python)</li>
+            <li>Turned messy data into clear insights</li>
+            <li>Direct operational impact for stakeholders</li>
+        </ul>
+
+    </div>
+</body>
+</html>

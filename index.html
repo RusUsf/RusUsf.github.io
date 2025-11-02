@@ -59,9 +59,15 @@
         .skills-summary { background-color: #f0f8ff; padding: 15px; border-radius: 5px; margin-top: 25px; text-align: left;}
         .skills-summary p { margin: 0; }
 
-        .project-list { padding-left: 20px; text-align: left; }
+        .project-list { padding-left: 0; list-style-type: none; text-align: left; }
         .project-list li { margin-bottom: 25px; }
-        .project-list a.title { font-weight: bold; font-size: 1.2em; color: #333; text-decoration: none; }
+        /* This is the new title link style */
+        .project-list a.title { 
+            font-weight: bold; 
+            font-size: 1.2em; 
+            color: #007bff; /* Make the title the link color */
+            text-decoration: none;
+        }
         .project-list a.title:hover { text-decoration: underline; }
         .project-list .description { margin-top: 5px; margin-bottom: 8px; }
         .project-list .skills {
@@ -69,20 +75,23 @@
             color: #555;
             font-weight: bold;
         }
-        .project-list .project-links a {
-            font-size: 0.9em;
-            font-weight: bold;
-            text-decoration: none;
+        
+        .article-list { padding-left: 0; list-style-type: none; text-align: left; }
+        .article-list li { margin-bottom: 15px; }
+        .article-list a.title {
+            font-weight: bold; 
+            font-size: 1.1em; 
             color: #007bff;
-            margin-right: 15px;
+            text-decoration: none;
         }
-        .project-list .project-links a:hover { text-decoration: underline; }
+        .article-list a.title:hover { text-decoration: underline; }
+
     </style>
 </head>
 <body>
     <div class="container">
         
-        <img src="profile.jpg" alt="Ruslan Dubas Headshot" class="profile-pic">
+        <img src="Profile_Picture.JPG" alt="Ruslan Dubas Headshot" class="profile-pic">
         
         <h1>Ruslan Dubas</h1>
         <p class="headline">
@@ -106,29 +115,24 @@
         <h2>Portfolio Projects</h2>
         <ul class="project-list">
             <li>
-                <a href="[LINK_TO_DASHBOARD_OR_GITHUB_HERE]" target="_blank" class="title">OnMed Healthcare KPI Dashboard</a>
+                <a href="project-dashboard.html" class="title">OnMed Healthcare KPI Dashboard</a>
                 <p class="description">A Power BI dashboard consolidating operational and clinical data for management decision-making.</p>
-                <p class="skills">Skills: Power BI, SQL Optimization (Stored Procedures), Power Automate, HIPAA Compliance</p>
+                <p class="skills">Skills: Power BI, SQL Optimization, Power Automate, HIPAA Compliance</p>
             </li>
             <li>
-                <a href="[LINK_TO_GITHUB_REPO_HERE]" target="_blank" class="title">Automated Financial Reconciliation Engine</a>
-                <p class="description">A C# .NET application that automates bank statement reconciliation, eliminating manual data entry by mimicking multi-stage matching logic.</p>
+                <a href="project-reconciliation.html" class="title">Automated Financial Reconciliation Engine</a>
+                <p class="description">A C# .NET application that automates bank statement reconciliation, eliminating manual data entry.</p>
                 <p class="skills">Skills: Software Development (C# .NET), Process Automation, Complex Business Logic</p>
             </li>
             <li>
-                <a href="[LINK_TO_GITHUB_REPO_HERE]" target="_blank" class="title">Florida Real Estate Investment Analysis (Machine Learning)</a>
-                <p class="description">A machine learning model using 10 years of Florida government data (634 GB) to predict single-family home resale profitability.</p>
+                <a href="project-real-estate.html" class="title">Florida Real Estate Investment Analysis (Machine Learning)</a>
+                <p class="description">A machine learning model using 10 years of Florida government data (634 GB) to predict resale profitability.</p>
                 <p class="skills">Skills: Large-Scale Data Engineering, SQL, Machine Learning (R), Government Data (FDOR)</p>
-                <div class="project-links">
-                    <a href="https://github.com/RusUsf/FDOR_Data_and_Models" target="_blank">View on GitHub</a>
-                    <a href="https://youtu.be/q313-EOkkJs" target="_blank">Watch Video Demo</a>
-                </div>
             </li>
         </ul>
 
         <h2>Published PowerShell Modules</h2>
-        <ul class="project-list">
-            <li>
+        <ul class="article-list"> <li>
                 <a href="https://www.powershellgallery.com/packages/ApiTools" target="_blank" class="title">ApiTools</a>
                 <p class="description">A collection of tools for streamlining API interactions and data handling in PowerShell.</p>
             </li>
@@ -139,8 +143,7 @@
         </ul>
 
         <h2>Articles & Writing</h2>
-        <ul class="project-list">
-            <li>
+        <ul class="article-list"> <li>
                 <a href="https://medium.com/@ruslandubas2013/database-first-clean-architecture-automate-your-net-ca-cqrs-setup-with-powershell-ba598aec30f7" target="_blank" class="title">Database-First Clean Architecture: Automate your .NET CA/CQRS Setup with PowerShell</a>
             </li>
             <li>
