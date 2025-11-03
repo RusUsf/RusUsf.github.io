@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ruslan Dubas - .NET Developer & Data Engineer</title>
     
+    
+
     <meta property="og:title" content="Ruslan Dubas - .NET Developer & Data Engineer" />
     <meta property="og:description" content="My professional portfolio, showcasing projects in C#, PowerShell, Power BI, and large-scale data analysis." />
     <meta property="og:url" content="https://ruslandubas.com" />
@@ -80,6 +82,18 @@
         .link-email       { background-color: #c71610; } /* Gmail Red */
         .link-resume      { background-color: #6c757d; } /* Neutral Gray */
 
+        .aws-badge-link {
+            display: inline-block; /* Allows margins to work */
+            margin-top: 25px; /* Adds space above the badge */
+        }
+        .aws-badge-link img {
+            height: 140px; /* Sets a fixed height */
+            width: auto;   /* Keeps the aspect ratio correct */
+            transition: transform 0.2s ease;
+        }
+        .aws-badge-link img:hover {
+            transform: scale(1.05); /* Slight zoom on hover */
+        }
         
         h2 { border-bottom: 2px solid #eee; padding-bottom: 5px; margin-top: 40px; text-align: left; }
         
@@ -133,6 +147,11 @@
             .NET Developer & AWS Certified Data Engineer
         </p>
         
+        <a href="https://www.credly.com/badges/83d5dc3a-a2e4-405d-b2db-6161d2d0389f/public_url" target="_blank" class="aws-badge-link">
+            <img src="aws-badge.png" alt="AWS Certified Data Engineer Badge">
+        </a>
+
+
         <div class="links">
             <a href="https://www.linkedin.com/in/ruslan-dubas-861a7799" target="_blank" class="link-linkedin">
                 <i class="fab fa-linkedin"></i> LinkedIn
@@ -150,7 +169,7 @@
                 <i class="fas fa-envelope"></i> Email Me
             </a>
             <a href="Ruslan_Dubas_Resume.pdf" target="_blank" class="link-resume">
-                <i class="fas fa-file-pdf"></i> Download Resume
+                <i class="fas fa-file-pdf"></i> Resume
             </a>
         </div>
 
