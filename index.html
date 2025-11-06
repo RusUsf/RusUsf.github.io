@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ruslan Dubas - .NET Developer & Data Engineer</title>
+    <meta name="description" content="The professional portfolio for Ruslan Dubas, a .NET Developer and AWS Certified Data Engineer, showcasing projects in C#, data analysis, and Power BI.">
     
-    
-
     <meta property="og:title" content="Ruslan Dubas - .NET Developer & Data Engineer" />
     <meta property="og:description" content="My professional portfolio, showcasing projects in C#, PowerShell, Power BI, and large-scale data analysis." />
     <meta property="og:url" content="https://ruslandubas.com" />
@@ -55,7 +54,9 @@
             display: flex; /* Aligns items */
             flex-wrap: wrap; /* Allows buttons to wrap on small screens */
             justify-content: center; /* Centers the buttons */
+            align-items: center; /* Vertically aligns all buttons */
         }
+        /* Style for the normal icon buttons */
         .links a { 
             text-decoration: none; 
             font-weight: bold; 
@@ -75,25 +76,35 @@
         }
 
         /* --- Individual Icon Colors --- */
-        .link-linkedin    { background-color: #0077B5; } /* LinkedIn Blue */
-        .link-github      { background-color: #333; }   /* GitHub Black */
-        .link-medium      { background-color: #000; }   /* Medium Black */
-        .link-powershell  { background-color: #012456; } /* PowerShell Blue */
-        .link-email       { background-color: #c71610; } /* Gmail Red */
-        .link-resume      { background-color: #6c757d; } /* Neutral Gray */
-
-        .aws-badge-link {
-            display: inline-block; /* Allows margins to work */
-            margin-top: 25px; /* Adds space above the badge */
+        .link-linkedin   { background-color: #0077B5; } /* LinkedIn Blue */
+        .link-github     { background-color: #333; }   /* GitHub Black */
+        .link-medium     { background-color: #000; }   /* Medium Black */
+        .link-powershell { background-color: #012456; } /* PowerShell Blue */
+        .link-email      { background-color: #c71610; } /* Gmail Red */
+        .link-resume     { background-color: #6c757d; } /* Neutral Gray */
+        
+        /* --- NEW STYLE FOR THE BADGE BUTTON --- */
+        /* This applies the button spacing and hover effect to the badge link */
+        .links a.link-badge {
+            padding: 0; /* Remove padding */
+            background-color: transparent; /* No background color */
+            margin: 5px; /* Keep the same spacing */
+            transition: transform 0.2s ease; /* Keep hover effect */
+            line-height: 0; /* Fixes potential alignment issues */
         }
-        .aws-badge-link img {
-            height: 140px; /* Sets a fixed height */
-            width: auto;   /* Keeps the aspect ratio correct */
-            transition: transform 0.2s ease;
+        /* The image itself */
+        .links a.link-badge img {
+            height: 105px; /* Sets height to match other buttons (10px pad + ~18px font + 10px pad) */
+            width: auto; /* Maintain aspect ratio */
+            display: block; /* Ensures it's a block element */
+            border-radius: 5px; /* Match button corner radius */
         }
-        .aws-badge-link img:hover {
-            transform: scale(1.05); /* Slight zoom on hover */
+        /* Hover effect for the badge link */
+        .links a.link-badge:hover {
+            transform: translateY(-2px); /* Slight "lift" on hover */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
+        
         
         h2 { border-bottom: 2px solid #eee; padding-bottom: 5px; margin-top: 40px; text-align: left; }
         
@@ -146,11 +157,6 @@
         <p class="headline">
             .NET Developer & AWS Certified Data Engineer
         </p>
-        
-        <a href="https://www.credly.com/badges/83d5dc3a-a2e4-405d-b2db-6161d2d0389f/public_url" target="_blank" class="aws-badge-link">
-            <img src="aws-badge.png" alt="AWS Certified Data Engineer Badge">
-        </a>
-
 
         <div class="links">
             <a href="https://www.linkedin.com/in/ruslan-dubas-861a7799" target="_blank" class="link-linkedin">
@@ -170,6 +176,12 @@
             </a>
             <a href="Ruslan_Dubas_Resume.pdf" target="_blank" class="link-resume">
                 <i class="fas fa-file-pdf"></i> Resume
+            </a>
+            
+            <a href="https://www.credly.com/badges/83d5dc3a-a2e4-405d-b2db-6161d2d0389f/public_url" 
+               target="_blank" 
+               class="link-badge">
+                <img src="aws-badge.png" alt="AWS Certified Data Engineer Badge">
             </a>
         </div>
 
@@ -218,7 +230,7 @@
                 <a href="https://medium.com/@ruslandubas2013/database-first-clean-architecture-automate-your-net-ca-cqrs-setup-with-powershell-ba598aec30f7" target="_blank" class="title">Database-First Clean Architecture: Automate your .NET CA/CQRS Setup with PowerShell</a>
             </li>
             <li>
-                <a href="https://medium.com/@ruslandubas2013/location-location-location-predicting-real-estate-profitability-with-r-and-634gb-of-florida-tax-f7a6c72b5e8b" target="_blank" class="title">Predicting Real estate Profitability with R and 63.4GB of Florida Tax Data</a>
+                <a href="httpsD://medium.com/@ruslandubas2013/location-location-location-predicting-real-estate-profitability-with-r-and-634gb-of-florida-tax-f7a6c72b5e8b" target="_blank" class="title">Predicting Real estate Profitability with R and 634GB of Florida Tax Data</a>
             </li>
         </ul>
 
